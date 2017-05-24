@@ -1,0 +1,32 @@
+{
+  "name": "theme-snazzyfied",
+  "displayName": "Snazzyfied",
+  "description": "Snazzy theme inspired by Snazzy Hyper color scheme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meister/vscode-snazzyfied.git"
+  },
+  "version": "0.0.1",
+  "license": "MIT",
+  "publisher": "meister",
+  "engines": {
+    "vscode": "^1.12"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#44494f",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Snazzyfied",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Snazzyfied.json"
+      }
+    ]
+  }
+}
