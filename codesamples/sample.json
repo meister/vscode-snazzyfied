@@ -1,0 +1,18 @@
+{
+    "editor.fontFamily": "Input Mono Narrow Liga",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.renderWhitespace": "all",
+    "files.trimTrailingWhitespace": true,
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "terminal.external.osxExec": "iTerm.app",
+    "eslint.autoFixOnSave": true,
+    "window.zoomLevel": 0,
+    "docker.enableLinting": true,
+    "git.confirmSync": false,
+    "workbench.iconTheme": "vs-seti",
+    "material-icon-theme.angular.iconsEnabled": true,
+    "material-icon-theme.folders.iconsEnabled": false,
+    "search.useIgnoreFilesByDefault": true,
+    "workbench.colorTheme": "Snazzyfied"
+}
