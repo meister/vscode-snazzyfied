@@ -49,6 +49,7 @@
     "panelTitle.activeBorder": "#57c7ff00",
 
     "activityBar.background": "#191a22",
+    "activityBarBadge.background": "#009ae6",
     "sideBar.background": "#21232d",
     "sideBarSectionHeader.background": "#00000022",
 
@@ -438,7 +439,7 @@
       "name": "CSS Base color",
       "scope": "source.css",
       "settings": {
-        "foreground": "#5C6370"
+        "foreground": "#f3f99d"
       }
     },
     {
@@ -450,9 +451,16 @@
     },
     {
       "name": "CSS Selector",
-      "scope": "source.css meta.selector",
+      "scope": "meta.selector.css",
       "settings": {
         "foreground": "#57c7ff"
+      }
+    },
+    {
+      "name": "CSS Pseudo Selector",
+      "scope": "entity.other.attribute-name.pseudo-class.css",
+      "settings": {
+        "foreground": "#9aedfe"
       }
     },
     {
@@ -460,6 +468,27 @@
       "scope": "source.css meta.selector entity.other.attribute-name.class punctuation.definition",
       "settings": {
         "foreground": "#9aedfe"
+      }
+    },
+    {
+      "name": "CSS Property list",
+      "scope": "meta.property-list.css",
+      "settings": {
+        "foreground": "#999"
+      }
+    },
+    {
+      "name": "CSS Property list brackets",
+      "scope": "punctuation.section.property-list.begin.bracket.curly.css, punctuation.section.property-list.end.bracket.curly.css",
+      "settings": {
+        "foreground": "#555"
+      }
+    },
+    {
+      "name": "CSS Property list comma",
+      "scope": "punctuation.separator.list.comma.css",
+      "settings": {
+        "foreground": "#555"
       }
     },
     {
@@ -491,6 +520,14 @@
       "settings": {
         "fontStyle": "",
         "foreground": "#f3f99d"
+      }
+    },
+    {
+      "name": "CSS proprety value unit",
+      "scope": "keyword.other.unit.s.css, keyword.other.unit.px.css, keyword.other.unit.pt.css, keyword.other.unit.pc.css, keyword.other.unit.cm.css, keyword.other.unit.mm.css, keyword.other.unit.in.css, keyword.other.unit.em.css, keyword.other.unit.ex.css, keyword.other.unit.ch.css, keyword.other.unit.rem.css, keyword.other.unit.vw.css, keyword.other.unit.vh.css, keyword.other.unit.vmin.css, keyword.other.unit.vmax.css, keyword.other.unit.percentage.css",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#FF9F43"
       }
     },
 

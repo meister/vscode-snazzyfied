@@ -1,2 +1,6 @@
 personal-access-token
 old
+temp
+node_modules
+.cache
+dist

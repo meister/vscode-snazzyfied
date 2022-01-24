@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Snazzyfied Theme</title>
+    <style>
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+        /* background: #282a36; */
+        background-color: #ccc;
+        color: #333;
+      }
+
+      .row {
+        display: flex;
+      }
+
+      .column {
+        flex: 50%;
+      }
+
+      tr th,
+      tr td {
+        font-size: 1.1em;
+        padding: 0.2em
+      }
+
+      table.colors td div {
+        background-color: #282a36;
+        color: #dee1db;
+        width: 14em;
+        padding: 0.5em;
+        text-align: center;
+        border-radius: 6px;
+      }
+
+      table.demo {
+        margin: 0;
+        padding: 0;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border-width: 0;
+      }
+
+      table.demo td {
+        color: #dee1db;
+        vertical-align: top;
+      }
+
+      table.demo .titleBar {
+        text-align: center;
+        font-size: 0.9em;
+      }
+      table.demo .activityBar {
+        height: 300px;
+      }
+      table.demo .sideBar {
+        width: 300px;
+      }
+      table.demo .editor {
+        width: 600px;
+      }
+
+
+      .defaultBackground { background-color: #282a36;}
+      .darkerBackground { background-color: #21232d;}
+      .darkestBackground { background-color: #16171d;}
+
+      .defaultForeground { color: #dee1db }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column" style="flex: 400px">
+        <h2>Background Colors</h2>
+        <table class="colors">
+          <tr>
+            <th scope="colgroup">.defaultBackground</th>
+            <td>
+              <div>#282a36</div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="colgroup">.darkerBackground</th>
+            <td>
+              <div class="darkerBackground defaultForeground">#21232d</div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="colgroup">.darkestBackground</th>
+            <td>
+              <div class="darkestBackground defaultForeground">#16171d</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="column">
+        <h2>Demo</h2>
+        <table class="demo">
+          <tr>
+            <td colspan="3" class="titleBar darkestBackground">Title Bar</td>
+          </tr>
+          <tr>
+            <td class="activityBar darkestBackground">[ICON]</td>
+            <td class="sideBar darkerBackground">Sidebar</td>
+            <td class="editor defaultBackground">Editor area</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

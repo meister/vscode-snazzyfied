@@ -1,0 +1,11 @@
+// Colors
+.defaultBackground { background-color: $theme.colors.editor.background; }
+.darkerBackground { background-color: $theme.colors.sideBar.background;}
+.darkestBackground { background-color: $theme.colors.titleBar.activeBackground;}
+
+.defaultForeground { color: $theme.colors.editor.foreground; }
+
+// Components
+.editorBackground 	{ @include .defaultBackground; }
+.sidebarBackground 	{ @include .darkerBackground; }
+.titleBarBackground { @include .darkestBackground; }
