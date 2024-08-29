@@ -1,2 +1,6 @@
 personal-access-token
 old
+dist
+.cache
+.DS_Store
+temp

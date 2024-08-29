@@ -1,0 +1,30 @@
+/* Comment */
+// Comment
+
+.yellow     { color: #E0C285; }
+.brown      { color: #523D14; madsd: unknownproperty; }
+
+a:active { font-weight: bold; }
+
+#id { font-size: 110%; }
+
+.units,
+.other {
+	width: 1cm;
+	width: 1mm;
+	width: 1in;
+	width: 1px;
+	width: 1pt;
+	width: 1pc;
+	width: 1em;
+	width: 1ex;
+	width: 1ch;
+	width: 1rem;
+	width: 1vh;
+	width: 1vw;
+	width: 1vmin;
+	width: 1vmax;
+	width: 1%;
+}
+
+div { color: #aabbcc; max-width: 85px; -webkit-transition: 1s; }
