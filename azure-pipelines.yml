@@ -4,7 +4,9 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
+  branches:
+    include:
+      - "*"
 
 pool:
   vmImage: ubuntu-latest
@@ -17,5 +19,20 @@ steps:
 
 - script: |
     npm install
+  displayName: 'npm install'
+
+- script: |
     npm run build
-  displayName: 'npm install and build'
+  displayName: 'npm build'
+
+# Run Code Analysis v6
+# Run scanner and upload the results to the SonarQube server.
+# - task: SonarQubeAnalyze@6
+#   inputs:
+#     jdkversion: 'JAVA_HOME_17_X64' # 'JAVA_HOME' | 'JAVA_HOME_17_X64' | 'JAVA_HOME_21_X64'. Required. JDK version source for analysis. Default: JAVA_HOME_17_X64.
+
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: '$(Build.SourcesDirectory)'
+    contents: '*.vsix'
+    targetFolder: '$(Build.ArtifactStagingDirectory)'

@@ -11,12 +11,11 @@
   "license": "MIT",
   "publisher": "meister",
   "engines": {
-    "vscode": "^1.12"
+    "vscode": "^1.90.0"
   },
   "categories": [
     "Themes"
   ],
-  "icon": "images/icon.png",
   "galleryBanner": {
     "color": "#44494f",
     "theme": "dark"
