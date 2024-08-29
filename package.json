@@ -11,7 +11,7 @@
   "license": "MIT",
   "publisher": "meister",
   "engines": {
-    "vscode": "^1.90"
+    "vscode": "^1.12"
   },
   "categories": [
     "Themes"
