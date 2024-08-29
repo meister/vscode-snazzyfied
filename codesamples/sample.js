@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import Layout from './layout';
 import Header from 'containers/layout/header';
 import Columns from 'components/layout/columns';
@@ -10,7 +10,7 @@ import {
 	getCurrentDashboard,
 	getCurrentDashboardBlockIdsOrderedInColumns
 } from 'selectors/dashboard/dashboards';
-import {changeDashboard} from 'actions/dashboard/dashboards';
+import { changeDashboard } from 'actions/dashboard/dashboards';
 
 export class Dashboard extends Component {
 	changeDashboard() {
@@ -18,7 +18,7 @@ export class Dashboard extends Component {
 	}
 
 	render() {
-		const {title, columns} = this.props;
+		const { title, columns } = this.props;
 
 		return (
 			<Layout>

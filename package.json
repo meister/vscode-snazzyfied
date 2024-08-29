@@ -2,6 +2,7 @@
   "name": "theme-snazzyfied",
   "displayName": "Snazzyfied",
   "description": "Snazzy theme inspired by Snazzy Hyper color scheme",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/meister/vscode-snazzyfied.git"
@@ -25,7 +26,7 @@
       {
         "label": "Snazzyfied",
         "uiTheme": "vs-dark",
-        "path": "./themes/Snazzyfied.json"
+        "path": "./themes/Snazzyfied-color-theme.json"
       }
     ]
   },
@@ -33,14 +34,14 @@
     "serve:template": "node templates"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "flat": "^5.0.2",
-    "json5": "^2.1.3",
-    "parcel": "^1.12.4",
-    "postcss-modules": "^3.2.0",
+    "autoprefixer": "^10.4.20",
+    "flat": "^6.0.1",
+    "json5": "^2.2.3",
+    "parcel": "^2.12.0",
+    "postcss-modules": "^6.0.0",
     "postcss-simple-include": "^0.1.0",
-    "postcss-simple-vars": "^5.0.2",
+    "postcss-simple-vars": "^7.0.1",
     "postcss-variables": "^1.1.1",
-    "squirrelly": "^8.0.3"
+    "squirrelly": "^9.1.0"
   }
 }

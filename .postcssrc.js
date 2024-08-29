@@ -14,7 +14,7 @@ module.exports = {
 					primary: '#fff',
 					secondary: '#000'
 				},
-				theme: unflatten(JSON5.parse(readFileSync('themes/Snazzyfied.json', 'utf8')))
+				theme: unflatten(JSON5.parse(readFileSync('themes/Snazzyfied-color-theme.json', 'utf8')))
 			}
 		}
 	}

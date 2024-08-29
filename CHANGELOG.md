@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Diff syntax highlighting
 - UI Theme for debug and notifications bar
+- Theming improvements for general area
+
+### Changed
+- Dependencies updated
+- Minimum Node version is now 20, changed code to module type
 
 ## [0.1.0] - 2017-05-24
 ### Added

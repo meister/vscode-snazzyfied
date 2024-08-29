@@ -6,24 +6,24 @@ import http from 'http';
 const PORT = process.env.PORT || 1337;
 
 async function render(template, data) {
-	return Sqrl.render(template, { ...data, css: result.css });
+	return Sqrl.render(template, { ...data, css: data.css });
 }
 
 function loadTemplate() {
 	return readFileSync('templates/index.html', 'utf8');
 }
 
-function loadData() {
-	return JSON5.parse(readFileSync('themes/Snazzyfied.json', 'utf8'));
+function loadData(colorTheme) {
+	return JSON5.parse(readFileSync(`themes/${colorTheme}-color-theme.json`, 'utf8'));
 }
 
 
 const server = http.createServer(async (request, response) => {
-	const data = loadData();
+	const data = loadData('Snazzyfied');
 	const template = loadTemplate();
 
 	const headers = {
-		'Content-Type': 'text/plain',
+		'Content-Type': 'text/html',
 	};
 
 	let statusCode = 200;
