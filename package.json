@@ -9,7 +9,7 @@
   },
   "version": "0.1.0",
   "license": "MIT",
-  "publisher": "meister",
+  "publisher": "meistr",
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -31,7 +31,9 @@
   },
   "scripts": {
     "build": "vsce package",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "login": "vsce login meistr",
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "@vscode/test-cli": "^0.0.10",
