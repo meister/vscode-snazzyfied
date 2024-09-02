@@ -1,0 +1,63 @@
+name: Publish Extension
+on:
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20' # Specify the Node.js version
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Azure Devops Auth
+      env:
+        AZURE_DEVOPS_PAT: ${{ secrets.AZURE_DEVOPS_PAT }} # Access NPM token securely from GitHub Secrets
+      run: npm run login
+
+    - name: Build and Publish Extension
+      env:
+        AZURE_DEVOPS_PAT: ${{ secrets.AZURE_DEVOPS_PAT }} # Access NPM token securely from GitHub Secrets
+      run: |
+        # Extract tag name
+        TAG_NAME=$(git describe --tags)
+
+        # Check if the tag name has the `rc.x` suffix
+        if [[ $TAG_NAME =~ rc\.[0-9]+$ ]]; then
+          echo "Building the pre-release package"
+          npm run build -- --pre-release
+          echo "Publishing as a pre-release version"
+          npm run publish -- --pre-release
+        else
+          echo "Building the package"
+          npm run build
+          echo "Publishing as a stable release"
+          npm run publish
+        fi
+
+    - name: Push changes back to master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub token for pushing changes
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+
+        # Ensure we are on the master branch
+        git checkout master
+
+        # Add any changes (e.g., package version bump)
+        git add .
+
+        # Commit changes if there are any
+        git commit -m "Publish version $TAG_NAME" || echo "No changes to commit"
+
+        # Push changes back to the master branch
+        git push origin master

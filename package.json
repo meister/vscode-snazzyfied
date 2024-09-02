@@ -1,21 +1,21 @@
 {
-  "name": "theme-snazzyfied",
+  "name": "vscode-theme-snazzyfied",
   "displayName": "Snazzyfied",
   "description": "Snazzy theme inspired by Snazzy Hyper color scheme",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/meister/vscode-snazzyfied.git"
   },
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
-  "publisher": "meister",
+  "publisher": "meistr",
   "engines": {
-    "vscode": "^1.12"
+    "vscode": "^1.90.0"
   },
   "categories": [
     "Themes"
   ],
-  "icon": "images/icon.png",
   "galleryBanner": {
     "color": "#44494f",
     "theme": "dark"
@@ -25,22 +25,20 @@
       {
         "label": "Snazzyfied",
         "uiTheme": "vs-dark",
-        "path": "./themes/Snazzyfied.json"
+        "path": "./themes/Snazzyfied-color-theme.json"
       }
     ]
   },
   "scripts": {
-    "serve:template": "node templates"
+    "build": "vsce package",
+    "test": "vscode-test",
+    "login": "vsce login meistr",
+    "publish": "vsce publish"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "flat": "^5.0.2",
-    "json5": "^2.1.3",
-    "parcel": "^1.12.4",
-    "postcss-modules": "^3.2.0",
-    "postcss-simple-include": "^0.1.0",
-    "postcss-simple-vars": "^5.0.2",
-    "postcss-variables": "^1.1.1",
-    "squirrelly": "^8.0.3"
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "@vscode/vsce": "^3.0.0",
+    "changelog-updater": "^2.0.3"
   }
 }
