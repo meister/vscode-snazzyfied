@@ -32,7 +32,7 @@
   "scripts": {
     "build": "vsce package",
     "test": "vscode-test",
-    "login": "vsce login 145a74b1-790d-6a72-a5c2-9a11023c17a7",
+    "vsce-verify-pat": "vsce verify-pat meister",
     "vsce-publish": "vsce publish"
   },
   "devDependencies": {

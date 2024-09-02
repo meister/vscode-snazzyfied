@@ -28,14 +28,14 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Azure Devops Auth
+    - name: Azure Devops Verify PAT
       env:
-        AZURE_DEVOPS_PAT: ${{ secrets.AZURE_DEVOPS_PAT }} # Access NPM token securely from GitHub Secrets
-      run: npm run login
+        VSCE_PAT: ${{ secrets.AZURE_DEVOPS_PAT }} # Access NPM token securely from GitHub Secrets
+      run: npm run vsce-verify-pat
 
     - name: Build and Publish Extension
       env:
-        AZURE_DEVOPS_PAT: ${{ secrets.AZURE_DEVOPS_PAT }} # Access NPM token securely from GitHub Secrets
+        VSCE_PAT: ${{ secrets.AZURE_DEVOPS_PAT }} # Access NPM token securely from GitHub Secrets
       run: |
         echo "Building the package"
         npm run build
