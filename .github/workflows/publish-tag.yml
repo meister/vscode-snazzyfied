@@ -55,9 +55,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub token for pushing changes
       run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
-
         # Add any changes (e.g., package version bump)
         git add .
 
