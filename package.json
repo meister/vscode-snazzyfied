@@ -34,7 +34,7 @@
     "test": "vscode-test",
     "vsce-verify-pat": "vsce verify-pat meister",
     "vsce-publish": "vsce publish",
-    "preversion": "changelog-updater"
+    "version": "changelog-updater && git add CHANGELOG.md"
   },
   "devDependencies": {
     "@vscode/test-cli": "^0.0.10",

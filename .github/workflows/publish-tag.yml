@@ -62,7 +62,7 @@ jobs:
         git add .
 
         # Commit changes if there are any
-        git commit -m "Publish version $TAG_NAME" || echo "No changes to commit"
+        git commit --amend --no-edit -n || echo "No changes to commit"
 
         # Push changes back to the master branch
         git push --tags
