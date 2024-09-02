@@ -522,7 +522,7 @@
       "name": "CSS Key-Value Separator",
       "scope": "source.css punctuation.separator.key-value",
       "settings": {
-        "foreground": "#FF9DD1"
+        "foreground": "#ff9dd1"
       }
     },
     {
@@ -634,7 +634,7 @@
       "name": "PostCSS Support Types",
       "scope": "support.type.property-name.css.postcss",
       "settings": {
-        "foreground": "#C678DD"
+        "foreground": "#eff0eb"
       }
     },
 
@@ -681,6 +681,13 @@
       "scope": "punctuation.separator.key-value.mapping.yaml",
       "settings": {
         "foreground": "#eff0eb"
+      }
+    },
+    {
+      "name": "YAML name tag",
+      "scope": "entity.name.tag.yaml",
+      "settings": {
+        "foreground": "#f3f99d"
       }
     },
 
@@ -746,6 +753,13 @@
 
     // Markdown
     {
+      "name": "Markdown Punctuation Constant",
+      "scope": "punctuation.definition.constant.markdown",
+      "settings": {
+        "foreground": "#ff9f43"
+      }
+    },
+    {
       "name": "Markdown Headings",
       "scope": "markup.heading",
       "settings": {
@@ -754,16 +768,53 @@
     },
     {
       "name": "Markdown Links Title/Description",
-      "scope": "markdown.meta.inline",
+      "scope": "meta.link.inline.markdown",
       "settings": {
         "foreground": "#9aedfe"
       }
     },
     {
-      "name": "Markdown Links",
-      "scope": "markdown.meta.link.inline.detected-link",
+      "name": "Markdown Italic",
+      "scope": "markup.italic.markdown",
       "settings": {
-        "foreground": "#C678DD"
+        "foreground": "#f3f99d",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown Bold",
+      "scope": "markup.bold.markdown",
+      "settings": {
+        "foreground": "#ffa820",
+        "fontStyle": "bold",
+      }
+    },
+    {
+      "name": "Markdown Underline Link",
+      "scope": "markup.underline.link.markdown",
+      "settings": {
+        "foreground": "#6ecfff"
+      }
+    },
+    {
+      "name": "Markdown Reference Link Definition",
+      "scope": "meta.link.reference.def.markdown",
+      "settings": {
+        "foreground": "#bbfcd1"
+      }
+    },
+    {
+      "name": "Markdown list",
+      "scope": "punctuation.definition.list.begin.markdown",
+      "settings": {
+        "foreground": "#6a6d7f"
+      }
+    },
+    {
+      "name": "Markdown table",
+      "scope": "punctuation.separator.table.markdown,punctuation.definition.table.markdown",
+      "settings": {
+        "foreground": "#6a6d7f"
       }
     },
 
