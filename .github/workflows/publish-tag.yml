@@ -1,6 +1,16 @@
 name: Publish Extension
 on:
   workflow_dispatch: # Manual trigger
+    inputs:
+      version:
+        description: 'Version type to publish'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
 
 jobs:
   build-and-publish:
@@ -27,21 +37,10 @@ jobs:
       env:
         AZURE_DEVOPS_PAT: ${{ secrets.AZURE_DEVOPS_PAT }} # Access NPM token securely from GitHub Secrets
       run: |
-        # Extract tag name
-        TAG_NAME=$(git describe --tags)
-
-        # Check if the tag name has the `rc.x` suffix
-        if [[ $TAG_NAME =~ rc\.[0-9]+$ ]]; then
-          echo "Building the pre-release package"
-          npm run build -- --pre-release
-          echo "Publishing as a pre-release version"
-          npm run publish -- --pre-release
-        else
-          echo "Building the package"
-          npm run build
-          echo "Publishing as a stable release"
-          npm run publish
-        fi
+        echo "Building the package"
+        npm run build
+        echo "Publishing ${{ github.event.inputs.version }} release"
+        npm run publish -- ${{ github.event.inputs.version }}
 
     - name: Push changes back to master
       env:
