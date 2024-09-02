@@ -18,12 +18,12 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
-        node-version: '20' # Specify the Node.js version
+        node-version-file: '.nvmrc'
 
     - name: Install dependencies
       run: npm install
@@ -40,6 +40,7 @@ jobs:
         echo "Building the package"
         npm run build
         echo "Publishing ${{ github.event.inputs.version }} release"
+        git status
         npm run vsce-publish -- ${{ github.event.inputs.version }}
 
     - name: Push changes back to master
@@ -48,9 +49,6 @@ jobs:
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-
-        # Ensure we are on the master branch
-        git checkout master
 
         # Add any changes (e.g., package version bump)
         git add .

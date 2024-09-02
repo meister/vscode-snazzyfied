@@ -1,2 +1,6 @@
 **/*.test.js
 templates
+.vscode-test.cjs
+codesamples
+.github
+.gitignore

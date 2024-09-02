@@ -33,7 +33,8 @@
     "build": "vsce package",
     "test": "vscode-test",
     "vsce-verify-pat": "vsce verify-pat meister",
-    "vsce-publish": "vsce publish"
+    "vsce-publish": "vsce publish",
+    "preversion": "changelog-updater"
   },
   "devDependencies": {
     "@vscode/test-cli": "^0.0.10",
