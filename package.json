@@ -30,19 +30,10 @@
     ]
   },
   "scripts": {
-    "serve:template": "node templates",
     "build": "vsce package"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "flat": "^6.0.1",
-    "json5": "^2.2.3",
-    "parcel": "^2.12.0",
-    "postcss-modules": "^6.0.0",
-    "postcss-simple-include": "^0.1.0",
-    "postcss-simple-vars": "^7.0.1",
-    "postcss-variables": "^1.1.1",
-    "squirrelly": "^9.1.0",
-    "@vscode/vsce": "^3.0.0"
+    "@vscode/vsce": "^3.0.0",
+    "changelog-updater": "^2.0.3"
   }
 }

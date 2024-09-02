@@ -432,7 +432,6 @@
       "name": "Tag attribute",
       "scope": "entity.other.attribute-name.html, entity.other.attribute-name.js, entity.other.attribute-name.jsx",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#f3f99d"
       }
     },
@@ -490,10 +489,19 @@
       }
     },
 
+    // JS
+    {
+      "name": "JS this",
+      "scope": "variable.language.this.js",
+      "settings": {
+        "foreground": "#ff9f43"
+      }
+    },
+
     // JSX
     {
       "name": "JSX Tag begin/end",
-      "scope": "punctuation.definition.tag.begin.jsx, punctuation.definition.tag.end.jsx",
+      "scope": "punctuation.definition.tag.begin.jsx, punctuation.definition.tag.end.jsx, punctuation.definition.tag.begin.js, punctuation.definition.tag.end.js",
       "settings": {
         "foreground": "#5c6370"
       }
