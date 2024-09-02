@@ -40,7 +40,7 @@ jobs:
         echo "Building the package"
         npm run build
         echo "Publishing ${{ github.event.inputs.version }} release"
-        npm run publish -- ${{ github.event.inputs.version }}
+        npm run vsce-publish -- ${{ github.event.inputs.version }}
 
     - name: Push changes back to master
       env:

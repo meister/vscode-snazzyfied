@@ -32,8 +32,8 @@
   "scripts": {
     "build": "vsce package",
     "test": "vscode-test",
-    "login": "vsce login meister",
-    "publish": "vsce publish"
+    "login": "vsce login 145a74b1-790d-6a72-a5c2-9a11023c17a7",
+    "vsce-publish": "vsce publish"
   },
   "devDependencies": {
     "@vscode/test-cli": "^0.0.10",
