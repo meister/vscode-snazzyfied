@@ -65,4 +65,5 @@ jobs:
         git commit -m "Publish version $TAG_NAME" || echo "No changes to commit"
 
         # Push changes back to the master branch
+        git push --tags
         git push origin master
