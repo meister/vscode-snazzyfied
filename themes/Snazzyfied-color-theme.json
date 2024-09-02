@@ -418,7 +418,7 @@
       "scope": "function.punctuation",
       "settings": {
         "fontStyle": "",
-        "foreground": "#555555"
+        "foreground": "#5c6370"
       }
     },
     {
@@ -495,7 +495,7 @@
       "name": "JSX Tag begin/end",
       "scope": "punctuation.definition.tag.begin.jsx, punctuation.definition.tag.end.jsx",
       "settings": {
-        "foreground": "#dee1db"
+        "foreground": "#5c6370"
       }
     },
 
@@ -546,14 +546,14 @@
       "name": "CSS Property list brackets",
       "scope": "punctuation.section.property-list.begin.bracket.curly.css, punctuation.section.property-list.end.bracket.curly.css",
       "settings": {
-        "foreground": "#555"
+        "foreground": "#5C6370"
       }
     },
     {
       "name": "CSS Property list comma",
       "scope": "punctuation.separator.list.comma.css",
       "settings": {
-        "foreground": "#555"
+        "foreground": "#5C6370"
       }
     },
     {
@@ -601,7 +601,7 @@
       "name": "PostCSS units",
       "scope": "keyword.other.unit.css.postcss",
       "settings": {
-        "foreground": "#75c4f9",
+        "foreground": "#e5c07b",
         "fontStyle": ""
       }
     },
@@ -732,7 +732,7 @@
       "name": "Markdown Headings",
       "scope": "markup.heading",
       "settings": {
-        "foreground": "#E06C75"
+        "foreground": "#e5c07b"
       }
     },
     {
@@ -846,6 +846,50 @@
       "settings": {
         "fontStyle": "",
         "foreground": "#ff9f43"
+      }
+    },
+
+    // XML
+    {
+      "name": "XML tag attributes",
+      "scope": "entity.other.attribute-name.localname.xml",
+      "settings": {
+        "foreground": "#f3f99d"
+      }
+    },
+    {
+      "name": "XML Doctype",
+      "scope": "keyword.other.doctype.xml",
+      "settings": {
+        "foreground": "#f3f99d"
+      }
+    },
+    {
+      "name": "XML tag punctuation",
+      "scope": "punctuation.definition.tag.xml",
+      "settings": {
+        "foreground": "#5c6370"
+      }
+    },
+    {
+      "name": "XML DocType Documentroot",
+      "scope": "variable.language.documentroot.xml",
+      "settings": {
+        "foreground": "#ff9f43"
+      }
+    },
+    {
+      "name": "XML DocType Meta tag",
+      "scope": "meta.tag.sgml.doctype.xml",
+      "settings": {
+        "foreground": "#f7c08b"
+      }
+    },
+    {
+      "name": "XML Preprocessor attribute",
+      "scope": "entity.other.attribute-name.xml",
+      "settings": {
+        "foreground": "#e5c07b"
       }
     },
 
