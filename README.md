@@ -1,12 +1,22 @@
 # Snazzyfied Theme
 
-[![Build Status](https://meistr.visualstudio.com/vscode-theme-snazzyfied/_apis/build/status%2Fmeister.vscode-snazzyfied?branchName=refs%2Fpull%2F9%2Fmerge)](https://meistr.visualstudio.com/vscode-theme-snazzyfied/_build/latest?definitionId=1&branchName=refs%2Fpull%2F9%2Fmerge)
-<!-- [![VS Code marketplace button](https://vsmarketplacebadge.apphb.com/installs/meister.theme-snazzyfied.svg)](https://marketplace.visualstudio.com/items?itemName=meister.theme-snazzyfied) -->
+[![Build Status](https://dev.azure.com/meistr/vscode-theme-snazzyfied/_apis/build/status%2Fmeister.vscode-snazzyfied?branchName=refs%2Fpull%2F9%2Fmerge)](https://dev.azure.com/meistr/vscode-theme-snazzyfied/_build/latest?definitionId=1&branchName=refs%2Fpull%2F9%2Fmerge)
+[![VS Code marketplace button](https://vsmarketplacebadges.dev/version-short/meister.vscode-theme-snazzyfied.svg)](https://marketplace.visualstudio.com/items?itemName=meister.vscode-theme-snazzyfied)
 
 Colourful theme inspired by [hyper-snazzy](https://github.com/sindresorhus/hyper-snazzy) by Sindre Sorhus.
 
 This theme contains UI theme as well as syntax highlighting.
 
+Verified syntaxes:
+- CSS / PostCSS
+- Diff
+- JS / JSX
+- JSON
+- HTML
+- Markdown
+- XML
+- YAML
+- And more [planned](https://github.com/meister/vscode-snazzyfied/issues?q=is%3Aissue+is%3Aopen+label%3Afeature%3Asyntax-highlighting)…
 
 ## Screenshots
 
