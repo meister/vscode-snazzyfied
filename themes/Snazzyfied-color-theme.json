@@ -110,6 +110,8 @@
     "statusBar.noFolderBackground": "#7f1999",
     "statusBar.noFolderForeground": "#d6d8e1",
     "statusBarItem.hoverBackground": "#ffffff11",
+    "statusBarItem.remoteBackground": "#0486c7",
+    "statusBarItem.remoteForeground": "#ffffff",
 
     "debugExceptionWidget.border": "#ff5c57",
     "debugExceptionWidget.background": "#7E231F",
@@ -472,7 +474,8 @@
       "name": "Library variable",
       "scope": "support.other.variable",
       "settings": {
-        "fontStyle": ""
+        "fontStyle": "",
+        "foreground": "#e5c07b"
       }
     },
     {
@@ -619,7 +622,13 @@
         "foreground": "#57c7ff",
       }
     },
-
+    {
+      "name": "PostCSS Support Types",
+      "scope": "support.type.property-name.css.postcss",
+      "settings": {
+        "foreground": "#C678DD"
+      }
+    },
 
     // JSON
     {

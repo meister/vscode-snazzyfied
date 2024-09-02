@@ -25,6 +25,10 @@ steps:
     npm run build
   displayName: 'npm build'
 
+- script: |
+    npm test
+  displayName: 'npm test'
+
 # Run Code Analysis v6
 # Run scanner and upload the results to the SonarQube server.
 # - task: SonarQubeAnalyze@6
