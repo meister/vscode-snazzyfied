@@ -20,10 +20,12 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        persist-credentials: false
 
     - name: Configure Git
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub token for pushing changes
+        GITHUB_TOKEN: ${{ secrets.GIT_PUSH_PAT }} # GitHub token for pushing changes
       run: |
         git config --global user.name "Martin Kapp"
         git config --global user.email "martin@coderats.net"
@@ -53,7 +55,7 @@ jobs:
 
     - name: Push changes back to master
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub token for pushing changes
+        GITHUB_TOKEN: ${{ secrets.GIT_PUSH_PAT }} # GitHub token for pushing changes
       run: |
         # Add any changes (e.g., package version bump)
         git add .
