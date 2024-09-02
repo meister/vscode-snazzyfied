@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [0.2.3] - 2024-09-02
 ### Added
 - Syntax: Diff
 - Syntax: XML
@@ -28,5 +30,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Initial release
 
-[Unreleased]: https://github.com/meister/vscode-snazzyfied/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/meister/vscode-snazzyfied/compare/v0.2.3...HEAD
+[0.2.3]: https://github.com/meister/vscode-snazzyfied/compare/v0.1.0...v0.2.3
 [0.1.0]: https://github.com/meister/vscode-snazzyfied/compare/v0.0.1...v0.1.0
