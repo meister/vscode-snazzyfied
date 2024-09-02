@@ -21,7 +21,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        persist-credentials: false
         token: ${{ secrets.GIT_PUSH_PAT }} # GitHub token for pushing changes
 
     - name: Configure Git
