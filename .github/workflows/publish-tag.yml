@@ -42,12 +42,17 @@ jobs:
         VSCE_PAT: ${{ secrets.AZURE_DEVOPS_PAT }} # Access NPM token securely from GitHub Secrets
       run: npm run vsce-verify-pat
 
-    - name: Build and Publish Extension
+    - name: Build Extension
       env:
         VSCE_PAT: ${{ secrets.AZURE_DEVOPS_PAT }} # Access NPM token securely from GitHub Secrets
       run: |
         echo "Building the package"
         npm run build
+
+    - name: Publish Extension
+      env:
+        VSCE_PAT: ${{ secrets.AZURE_DEVOPS_PAT }} # Access NPM token securely from GitHub Secrets
+      run: |
         echo "Publishing ${{ github.event.inputs.version }} release"
         git status
         npm run vsce-publish -- ${{ github.event.inputs.version }}
