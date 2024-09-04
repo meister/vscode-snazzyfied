@@ -2,6 +2,7 @@
   "name": "vscode-theme-snazzyfied",
   "displayName": "Snazzyfied",
   "description": "Snazzy theme inspired by Snazzy Hyper color scheme",
+  "icon": "./images/Snazzyfied.png",
   "type": "module",
   "repository": {
     "type": "git",
