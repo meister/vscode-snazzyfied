@@ -14,6 +14,7 @@ Verified syntaxes:
 - JSON
 - HTML
 - Markdown
+- Python
 - XML
 - YAML
 - And more [planned](https://github.com/meister/vscode-snazzyfied/issues?q=is%3Aissue+is%3Aopen+label%3Afeature%3Asyntax-highlighting)…
