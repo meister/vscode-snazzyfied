@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [0.4.0] - 2024-10-02
 ### Added
 - Syntax: Python improvements
 
@@ -44,7 +46,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Initial release
 
-[Unreleased]: https://github.com/meister/vscode-snazzyfied/compare/v0.3.1...HEAD
+[Unreleased]: https://github.com/meister/vscode-snazzyfied/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/meister/vscode-snazzyfied/compare/v0.3.1...v0.4.0
 [0.3.1]: https://github.com/meister/vscode-snazzyfied/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/meister/vscode-snazzyfied/compare/v0.2.3...v0.3.0
 [0.2.3]: https://github.com/meister/vscode-snazzyfied/compare/v0.1.0...v0.2.3
