@@ -1,6 +1,6 @@
 # Snazzyfied Theme
 
-[![Build Status](https://dev.azure.com/meistr/vscode-theme-snazzyfied/_apis/build/status%2Fmeister.vscode-snazzyfied?branchName=refs%2Fpull%2F9%2Fmerge)](https://dev.azure.com/meistr/vscode-theme-snazzyfied/_build/latest?definitionId=1&branchName=refs%2Fpull%2F9%2Fmerge)
+[![Build Status](https://dev.azure.com/meistr/vscode-theme-snazzyfied/_apis/build/status%2Fmeister.vscode-snazzyfied?branchName=master)](https://dev.azure.com/meistr/vscode-theme-snazzyfied/_build/latest?definitionId=1&branchName=master)
 [![VS Code marketplace button](https://vsmarketplacebadges.dev/version-short/meister.vscode-theme-snazzyfied.svg)](https://marketplace.visualstudio.com/items?itemName=meister.vscode-theme-snazzyfied)
 
 Colourful theme inspired by [hyper-snazzy](https://github.com/sindresorhus/hyper-snazzy) by Sindre Sorhus.
