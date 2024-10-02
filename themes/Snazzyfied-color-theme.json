@@ -314,22 +314,8 @@
       }
     },
     {
-      "name": "Python Magic Variable",
-      "scope": "python.support.magic.variable",
-      "settings": {
-        "foreground": "#E06C75"
-      }
-    },
-    {
       "name": "Function",
       "scope": "variable.function, entity.name.function, meta.class-method.js entity.name.function.js, meta.method.property.js entity.name.function.js",
-      "settings": {
-        "foreground": "#9aedfe"
-      }
-    },
-    {
-      "name": "Python @ Function Decorator",
-      "scope": "meta.function.decorator.python",
       "settings": {
         "foreground": "#9aedfe"
       }
@@ -894,7 +880,7 @@
     },
     {
       "name": "Python function",
-      "scope": "python.meta.function-call.builtin.support.function, python.meta.type.support.function-call, python.meta.variable.function-call.legacy.builtin",
+      "scope": "python.meta.function-call.builtin.support.function, python.meta.type.support.function-call, python.meta.variable.function-call.legacy.builtin, meta.function-call.python",
       "settings": {
         "fontStyle": "",
         "foreground": "#9aedfe"
@@ -910,10 +896,46 @@
     },
     {
       "name": "Python Function argument",
-      "scope": "python.variable.parameter",
+      "scope": "python.variable.parameter,meta.function.parameters.python,meta.function-call.arguments.python,meta.fstring.python,variable.parameter.function.language.python",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#f3f99d"
+      }
+    },
+    {
+      "name": "Python constant",
+      "scope": "constant.other.caps.python",
       "settings": {
         "fontStyle": "",
         "foreground": "#ff9f43"
+      }
+    },
+    {
+      "name": "Python Magic Variable",
+      "scope": "python.support.magic.variable,support.variable.magic.python",
+      "settings": {
+        "foreground": "#E06C75"
+      }
+    },
+    {
+      "name": "Python Support Function",
+      "scope": "support.function.builtin.python",
+      "settings": {
+        "foreground": "#57c7ff"
+      }
+    },
+    {
+      "name": "Python @ Function Decorator",
+      "scope": "meta.function.decorator.python,meta.member.access.python",
+      "settings": {
+        "foreground": "#9aedfe"
+      }
+    },
+    {
+      "name": "Python punctuation",
+      "scope": "punctuation.separator.period.python",
+      "settings": {
+        "foreground": "#d6d8e1"
       }
     },
 
